@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 20px;
+            border-bottom: 4px solid #0056b3;
+        }
+
+        container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h3 {
+            color: #007bff;
+            margin-top: 20px;
+            font-size: 24px;
+        }
+
+        p {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .sales-info {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .sales-info div {
+            width: 30%;
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .sales-info div span {
+            color: #007bff;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            display: block;
+            margin: 20px auto;
+            font-size: 18px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <span>Sales Report</span>
+        <span>Daily</span>
+    </header>
+
+    <container>
+        <h3>Total Sales Summary</h3>
+        <p>Wednesday, July 13, 2022</p>
+
+        <div class="sales-info">
+            <div>Total Sales <span>#4,800</span></div>
+            <div>Profit <span>#4,800</span></div>
+            <div>Loss <span>#4,800</span></div>
+        </div>
+
+        <input type="submit" value="Download Sales Entry Report">
+    </container>
+
+    <footer>
+        <a href="./Dashboard.html">Home</a>
+        <a href="#">About Us</a>
+        <a href="./Contact-us.html">Contact Us</a>
+    </footer>
+</body>
+</html>

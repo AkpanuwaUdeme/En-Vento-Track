@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Slide Menu</title>
+    
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li {
+    padding: 10px;
+    border-bottom: 1px solid #444;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#openMenuBtn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#closeMenuBtn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+    </style>
+</head>
+<body>
+    
+    
+    <footer>
+        <a href="#" id="openMenuBtn"> <!-- Added ID for the anchor tag -->
+            <img src="/Images/icons/icons8-menu-24.png" alt="menu icon">
+        </a>
+        <!-- Include the menu HTML structure here -->
+        <div id="menu" class="menu">
+            <button id="closeMenuBtn">Close Menu</button>
+            <ul>
+                <li><a href="./Account.html">Account</a></li>
+                <li><a href="./Contact-us.html">Contact us</a></li>
+                <li><a href="./Dashboard.html">Dashboard</a></li>
+                <li><a href="./Item.html">Items</a></li>
+                <li><a href="./Notification.html">Notifications</a></li>
+                <li><a href="./Record-item.html">Record item</a></li>
+                <li><a href="./Reset-Password.html">Reset password</a></li>
+                <li><a href="./Sales-report.html">Sales report</a></li>
+                <li><a href="./Summary-of-Items.html">Summary of Items</a></li>
+                <li><a href="./Terms-and-Conditions.html">Terms and condition</a></li>
+                <li><a href="#">Log out</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get references to the menu and menu button
+            const menu = document.getElementById('menu');
+            const openMenuBtn = document.getElementById('openMenuBtn'); // Changed querySelector to getElementById
+    
+            // Event listener for opening the menu
+            openMenuBtn.addEventListener('click', function () {
+                menu.style.left = '0';
+            });
+    
+            // Event listener for closing the menu
+            document.getElementById('closeMenuBtn').addEventListener('click', function () {
+                menu.style.left = '-250px';
+            });
+        });
+    </script>
+    
